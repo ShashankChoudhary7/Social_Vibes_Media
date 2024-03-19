@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title> Social_Vibes.com | Sign Up </title>
+
+        <link rel ="stylesheet" href ="css\user_sign_up.css"> 
+    </head>
+    <body>
+        <h1 id ="title"> Social Vibes !! </h1>
+
+        <div id ="create_account">
+
+            <div id ="description">
+                <h2 class ="create_colour"> Create a new account </h2>
+                <p>
+                    It's quick and easy. Let's connect to your Social Freinds
+                 </p>
+            </div>
+
+            <div id ="info">
+                <form>
+                    <span class ="input_feild">
+                        <input type ="text" name ="name" placeholder ="First name" required>
+                        <input type ="text" name ="sname" placeholder ="Surname" required>
+                    </span>
+
+                    <div class ="email">
+                       <input type="email/number" name ="userId" placeholder ="Mobile number or Email address" required>
+                       <br>
+                       <input type ="password" name ="passwrd" placeholder ="New Password" required>
+                   </div>
+
+                    <div class ="birthdate">
+                        <p> Date of Birth </p>
+                    <input type="Date" name="Bdate" min ="01-01-1905" max ="31-12-2024">
+                    </div>
+
+                     <div id ="radio">
+                        <p> Gender </p>
+                        <input type ="radio" name ="gender" value ="Male"> Male
+                        <input type ="radio" name ="gender" value ="Female"> Female
+                        <input type ="radio" name ="gender" value ="Others"> Other 
+                    </div>
+                    <br>
+
+                    <div id ="button">
+                         <input type ="submit" value ="SIGN UP">
+
+                         <a href="users/auth/google">
+                            <input type ="submit" value ="Sign in with Google">
+                          </a>
+
+                    </div>
+
+                    <div>
+                        <p> People who use our service may have uploaded your contact information to Social Vibes. 
+                        Learn more. </p>
+                    <P>
+                        By clicking Sign Up, you agree to our Terms, Privacy Policy and Cookies Policy. 
+                        <br>
+                        You may receive SMS notifications from us and can opt out at any time 
+                        </p>
+                    </div>
+
+                     <div id ="account">
+                           <h2> Already have an account ? </h3>
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+<header>
+    <div class= "left">
+  <h1> Social Vibes </h1>
+    </div>
+
+    <div class ="center">
+      <p> search </p>
+    </div>
+
+    <div class ="right">
+        <ul>
+            <% if(locals.user){ %>
+
+                <li>
+                    <a href ="/users/profile">
+                      <%= user.name %>
+                    </a>
+                </li>
+
+                <li>
+                    <a href ="/users/sign-out">
+                        Sign Out 
+                    </a>
+                </li>
+             <% } else{ %>
+                <li>
+                    <a href ="/users/sign-in">
+                         Sign in
+                    </a>
+                </li>
+
+                <li>
+                    <a href ="/users/sign-up">
+                         Sign up
+                    </a>
+                </li>
+
+            <% } %> 
+
+        </ul>
+    </div>
+</header>
