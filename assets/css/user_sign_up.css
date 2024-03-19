@@ -1,0 +1,97 @@
+body{
+    background-color: #ffca28;
+    text-align: center;
+}
+
+#title{
+    font-family: inherit;
+    font-style: italic;
+    color: darkviolet;
+    margin-top: 7px;
+    font-weight: 900;
+    font-size: 50px;
+    margin-bottom: 7px;
+}
+
+#create_account{
+
+      box-sizing: border-box;
+      border: 1px solid black;
+      border-radius: 10px;
+      width: 75%;
+      height: 100%;
+      margin-left: 15%;
+      margin-bottom: 70px;
+}
+
+#description{
+
+    border-bottom: 1px solid black;
+    margin-bottom: 3px;
+    height: 85px;
+    padding-bottom: 35x;
+}
+
+#description h2 {
+    margin: 0px;
+    margin-top: 3px;
+}
+#info{
+    padding-bottom: 25px;
+}
+
+.create_colour{
+    color: darkblue;
+    font-style: italic;
+    font-size: 30px;
+}
+
+p{
+    font-size: 17px;
+    font-weight: 500;
+    font-family: cursive;
+}
+
+.input_feild input{
+
+    width: 218px;
+    line-height: 1;
+    height: 30px;
+    margin: 7px;
+}
+
+.email input{
+    width: 40%;
+    height: 30px;
+    margin: 10px;
+}
+
+.birthdate input{
+    height: 33x;
+    width: 113px;
+    margin: 0px;
+}
+
+#button input{
+    background-color: #8e24aa;
+    height: 50px;
+    width: 100px;
+    color: white;
+    border-radius: 50%;
+    border-color: transparent;
+}
+
+#button:hover input{
+    color: black;
+}
+
+
+#account h2{
+    color: darkred;
+    font-size: 30px;
+}
+
+#radio input{
+    font-size: 27px;
+    font-weight: 500;
+}

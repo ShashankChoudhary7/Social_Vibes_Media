@@ -1,0 +1,55 @@
+body{
+    background-color: #ffca28;
+    text-align: center;
+}
+
+#title{
+    font-family: inherit;
+    font-style: italic;
+    color: darkviolet;
+    margin-top: 60px;
+    font-weight: 900;
+    font-size: 50px;
+    margin-bottom: 14px;
+}
+
+#log-in{
+    border: 1px solid black;
+    width: 40%;
+    height: 40%;
+    margin-left: 417px;
+}
+
+#log-in input{
+     width: 218px;
+    line-height: 1;
+    height: 30px;
+    margin: 7px;
+}
+
+#button input{
+    background-color: #8e24aa;
+    height: 50px;
+    width: 100px;
+    color: white;
+    border-radius: 50%;
+    border-color: transparent;
+}
+
+#button:hover input{
+    color: black;
+}
+
+#link a{
+    margin: 40px;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+#link a:hover{
+    color: blue;
+     text-decoration: underline;
+}

@@ -1,0 +1,43 @@
+<li>
+    <p>
+        <%  if(locals.user && post.user.id == req.user.id){ %>
+              <small>
+                  <a href ="/posts/destroy/<%= post._id %>">
+                      Delete post
+                  </a>
+              </small>
+            <%  }  %>
+                <%= post.content %>
+                     <br>
+              <smalll>
+               <%= post.user.name %>
+             </small>
+   </p>
+      
+<!-- Form to create comments inside the post-->
+      <div id ="post_comments">
+          <% if(locals.user){ %>
+
+              <form action ="comments/create" method ="POST">
+                  <input type ="text" name ="content" placeholder ="Type Comment Here..">
+
+                  <input type ="hidden" name ="post" value= "<%= post._id %>">
+
+                 <input type ="submit" value ="Add Comment">
+              </form>
+      <%  } %>   
+
+           <div class ="post-comments-list">
+              <ul id ="post-comments-<%= post._id %>">
+                   
+               <% for(comment of post.comments){ %>
+                  
+                <!--comment.ejs partial file is included-->
+                <%- include('_comment') -%>
+                  
+              <%  } %>
+              </ul>
+           </div>
+           
+      </div>
+  </li>
